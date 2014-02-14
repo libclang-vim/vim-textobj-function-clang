@@ -40,7 +40,7 @@ them by writing below code in your vimrc.
   NeoBundleLazy 'kana/vim-textobj-indent', {
         \ 'depends' : [
         \   'kana/vim-textobj-user',
-        \   'kana/vim-textobj-function,
+        \   'kana/vim-textobj-function',
         \   'rhysd/libclang-vim',
         \ ],
         \ 'autoload' : {

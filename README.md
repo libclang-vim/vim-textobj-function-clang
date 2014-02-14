@@ -16,7 +16,7 @@ This plugin depends on [textobj-user](https://github.com/kana/vim-textobj-user),
   NeoBundleLazy 'kana/vim-textobj-indent', {
         \ 'depends' : [
         \   'kana/vim-textobj-user',
-        \   'kana/vim-textobj-function,
+        \   'kana/vim-textobj-function',
         \   'rhysd/libclang-vim',
         \ ],
         \ 'autoload' : {
