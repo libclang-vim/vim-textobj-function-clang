@@ -48,6 +48,14 @@ them by writing below code in your vimrc.
         \   }
         \ }
 <
+- textobj-user
+https://github.com/kana/vim-textobj-user
+
+- textobj-function
+https://github.com/kana/vim-textobj-function
+
+- libclang-vim
+https://github.com/rhysd/libclang-vim
 
 ==============================================================================
 LICENSE						*textobj-function-clang-license*
