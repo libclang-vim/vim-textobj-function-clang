@@ -1,4 +1,4 @@
-let g:textobj_funciton_clang_default_compiler_args = get(g:, 'textobj_funciton_clang_default_compiler_args', "")
+let g:textobj_function_clang_default_compiler_args = get(g:, 'textobj_function_clang_default_compiler_args', "")
 let g:textobj_funciton_clang_include_headers = get(g:, 'textobj_funciton_clang_include_headers', "")
 
 function! s:prepare_temp_file()
@@ -16,7 +16,7 @@ endfunction
 function! textobj#function#clang#select(obj)
     let temp_name = s:prepare_temp_file()
     try
-        let extent = libclang#location#function_extent(temp_name, line('.'), col('.'), get(b:, 'textobj_funciton_clang_default_compiler_args', g:textobj_funciton_clang_default_compiler_args))
+        let extent = libclang#location#function_extent(temp_name, line('.'), col('.'), get(b:, 'textobj_function_clang_default_compiler_args', g:textobj_function_clang_default_compiler_args))
     finally
         call delete(temp_name)
     endtry
